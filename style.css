@@ -1,0 +1,495 @@
+html {
+  height: 100%;
+  width: 100%;
+
+}
+
+#outline {
+  height: 98.7cm;
+  width: 100%;
+  background-image: linear-gradient(to right, lightpink, blue, purple);
+  flex:1 ;
+  
+}
+.font {
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+.container1 {
+  height: 22cm;
+  background-color: lightpink;
+  display: flex;
+  align-items: left;
+  justify-content: space-between;
+  flex-shrink: 0; 
+  border-radius: 10%;
+  flex:1;
+  z-index: 1;
+  
+  
+}
+#align1 img{
+  width: 7.8cm;
+  flex-shrink: 2;
+  min-width: 3cm;
+  max-width: 7.8cm;
+  position: sticky;
+  min-height: 3cm;
+}
+#align2 img{
+  width: 7.8cm;
+  row-gap: 5px;
+  column-gap: 5px;
+  flex-shrink: 2;
+  min-width: 3cm;
+  max-width: 7.8cm;
+  position: sticky;
+}
+.overlay-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  z-index: 20; 
+  border-radius: 10%;
+
+
+}
+#hello{
+  position: relative;
+  top: -40px;
+  font-size: 60px;
+  animation-name: hello;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+
+}
+@keyframes hello{
+  0%{opacity:0.1;
+    color: darkgrey;}
+  25%{opacity:0.25}
+  50%{opacity:0.5;
+     color:darkgrey;}
+  100%{opacity:1}
+}
+#thisis{
+  position: relative;
+  top: -20px;
+  font-size: 60px;
+  animation-name: thisis;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+
+}
+@keyframes thisis{
+  0%{opacity:0.1;
+    color: darkgrey;}
+  25%{opacity:0.25}
+  50%{opacity:0.5;
+     color:darkgrey;}
+  100%{opacity:1}
+}
+#abhinaya{
+  font-size: 80px;
+  font-weight: bolder;
+  animation-name: abhinaya;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  animation-delay: 4s;
+  animation-iteration-count: infinite;
+}
+@keyframes abhinaya{
+  0%{opacity:0.1;
+    color: darkgrey;}
+  25%{opacity:0.25}
+  50%{opacity:0.5;
+     color:darkgrey;}
+  100%{opacity:1}
+}
+
+.section2 img {
+
+  max-width: 100%;
+  height: 10cm;
+ display:inline;
+  border: 10px solid white;
+}
+
+
+
+
+.container1::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 22.3cm;
+  background-color: blueviolet;
+  opacity: 0.7;
+  z-index: 2;
+  border-radius: 5%;
+}
+
+.image-container {
+  position: relative;
+
+}
+
+
+.container2 {
+  height: 15cm;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: whitesmoke;
+  border-radius: 10%;
+  padding: 1cm;
+
+}
+
+.section21 {
+  flex: 1;
+  max-width: 60%; 
+  text-align: left; 
+  padding-right: 1cm; 
+  word-wrap: break-word; 
+  letter-spacing: 2px;
+  word-spacing: 10px;
+  background-image: linear-gradient(to left,lightpink);
+  opacity: 1;
+}
+
+.section21 h1, .section21 p {
+  margin: 0;
+  margin-bottom: 0.5cm; 
+}
+
+.section22 {
+  flex-shrink: 0; 
+}
+
+.section22 img {
+  height: 10cm;
+  width: 8cm;
+  border: 3px solid black;
+  border-radius: 10%;
+}
+
+#about:hover{
+  text-decoration: underline;
+}
+.container3{
+  height:26cm;
+  width: full;
+  border-radius: 10%;
+  background-color:#ffebeb;
+}
+.font2 {
+  font-family: "PT Serif", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+#education{
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  font-size: 25px;
+  font-weight: 20;
+  text-indent: 3px;
+}
+
+#e{
+  animation-delay: 12s;
+  animation-name: e;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+}
+@keyframes e{
+  100%{
+    color: olivedrab;
+  }
+}
+#d{
+  animation-name: d;
+  animation-duration: 2s;
+  animation-delay: 15s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+}
+@keyframes d{
+  100%{
+    color: #ff9776;
+  }
+}
+#u{
+  animation-name: u;
+  animation-duration: 2s;
+  animation-delay: 18s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+}
+@keyframes u{
+  100%{
+    color: rebeccapurple;
+  }
+}
+#c{
+  animation-name: c;
+  animation-duration: 2s;
+  animation-delay: 20s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+}
+@keyframes c{
+  100%{
+    color: palevioletred;
+  }
+}
+#a{
+  animation-name: a;
+  animation-duration: 2s;
+  animation-delay: 22s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+}
+@keyframes a{
+  100%{
+    color: red;
+  }
+}
+#t{
+  animation-name: t;
+  animation-duration: 2s;
+  animation-delay: 24s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+}
+@keyframes t{
+  100%{
+    color: orange;
+  }
+}
+ #i{
+  animation-name: i;
+  animation-duration: 2s;
+  animation-delay: 26s;
+  animation-fill-mode: forwards;
+   animation-iteration-count: infinite;
+}
+@keyframes i{
+  100%{
+    color: peachpuff;
+  }
+}
+ #o{
+  animation-name: o;
+  animation-duration: 2s;
+  animation-delay: 28s;
+  animation-fill-mode: forwards;
+   animation-iteration-count: infinite;
+}
+@keyframes o{
+  100%{
+    color: hotpink;
+  }
+}
+ #n{
+  animation-name: n;
+  animation-duration: 2s;
+  animation-delay: 30s;
+  animation-fill-mode: forwards;
+   animation-iteration-count: infinite;
+}
+@keyframes n{
+  100%{
+    color: rebeccapurple;
+  }
+}
+#school{
+  font-style: italic;
+  text-align: center;
+  text-decoration: underline;
+  color: #264e70;
+}
+.container4{
+  height: 17cm;
+  background-color: #dcd6f7;
+  border-radius: 10%;
+
+}
+#con4div1{
+  display:flex;
+  font-size: 25px;
+  font-weight: 100;
+  text-align: left;
+  justify-content: center;
+}
+
+#skills{
+  text-align:center ;
+  font-size: 50px;
+  position: relative;
+  top:40px;
+  font-weight: 10;
+  letter-spacing: 4px;
+  color:#ff6767;
+  animation-name: skills;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: forwards;
+}
+@keyframes skills{
+  0%{color:#352961}
+  10%{color:#3c0303}
+  20%{color:#d01257}
+  30%{color:#e16428}
+  40%{color:#a55233}
+  50%{color:#3baea0}
+  60%{color:#e46161};
+  70%{color:#900048}
+  80%{color:#f1b963}
+  90%{color:#7c73e6}
+  100%{color:#ff007b}
+}
+#con4div12{
+  position: relative;
+  left:-100px;
+}
+#con4div13{
+  position: relative;
+  left:100px;
+}
+.container5{
+  height:17cm;
+  background-color:#fde994;
+  border-radius: 10%;
+  justify-content: center;
+  position: relative;
+  top:-40px
+
+}
+#con5div1{
+  display: flex;
+}
+#cinfo{
+  font-size: 45px;
+  text-align: center;
+  font: italic;
+  font-weight: 100;
+  position: relative;
+  top:40px;
+  animation-name: cinfo;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+  text-shadow:2px 2px 5px red ;
+}
+@keyframes cinfo{
+  0%{color: black}
+  10%{color: #606470}
+  20%{color: black}
+  30%{color: grey}
+  50%{color: black}
+  50%{color: grey;}
+  60%{color: black}
+  70%{color: grey;}
+  80%{color: black}
+  90%{color: grey;}
+  100%{color: black}
+}
+#details{
+  background-color: white;
+  justify-content: center;
+  width: 15cm;
+  height: 11cm;
+  text-align: left;
+  border-radius: 10%;
+  position: relative;
+  left:50px;
+  top:50px;
+  justify-content: space-between;
+   padding-left:30px ;
+}
+#name{
+  position: relative;
+  top: 20px;
+  font-size: 30px;
+}
+#email{
+  font-size: 20px;
+  position: relative;
+  top:-20px;
+}
+#phn{
+  position: relative;
+  top:-20px;
+  font-weight: 100;
+}
+#phno{
+  font-size: 20px;
+  position: relative;
+  top: -38px;
+}
+#in{
+  font-weight: 100;
+  position: relative;
+  top: -40px;
+}
+#insta{
+  font-size:20px;
+  position: relative;
+  top: -59px;
+
+
+}
+
+#form{
+  height:11cm;
+  width:15cm;
+  border-radius: 10%;
+  position: relative;
+  left:70px;
+  top: -50px;
+ }
+
+#con5div2{
+  height: 8cm;
+  width: 15cm;
+  position: relative;
+  top:100px;
+  border-radius: 10%;
+}
+#fname{
+  width: 15cm;
+  height: 1.5cm;
+}
+#fmessage{
+  width: 15cm;
+  height: 4cm;
+}
+#fsubmit{
+  width: 15.2cm;
+  height: 1.5cm;
+  background-color:#081f37 ;
+  color: white;
+}
+#queries{
+  position: relative;
+  top:100px;
+  font-weight: 100;
+}
+
+
+
